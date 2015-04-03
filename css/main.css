@@ -1,0 +1,635 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+   body {
+   	font-size: 16px;
+   }
+   a {
+   	color: #009688
+   }
+   blockquote {
+   	margin: 20px 0;
+   	padding-left: 1.5rem;
+   	border-left: 5px solid #795548;
+   	color: #795548;
+   	font-weight: 400;
+   	font-size: 125%;
+   }
+   nav {
+   	background: white;
+   	box-shadow: none;
+   	height: 0;
+   }
+   nav i {
+   	padding: 0 15px;
+   	position: relative;
+   	top: 5px;
+   }
+   main {
+   	padding-left: 190px;
+   	background: url(http://subtlepatterns.com/patterns/tiny_grid.png);
+   }
+   ul.side-nav {
+   	width: 190px;
+   }
+   ul.side-nav li {
+   	padding: 0
+   }
+   ul.side-nav.fixed a {
+   	display: block;
+   	color: #444;
+   	box-sizing: content-box;
+   	line-height: 100%;
+   	padding: 10px 0 12px
+   }
+   ul.table-of-contents li.logo a.active,
+   ul.table-of-contents li.logo a:hover {
+   	border: none;
+   	font-weight: 200
+   }
+   ul.side-nav.fixed li.logo {
+   	padding: 30px 30px 40px;
+   	border-bottom: 1px solid #ddd;
+   	min-height: 90px;
+   	box-sizing: content-box;
+   	background-color: #fafafa
+   }
+   ul.side-nav.fixed li.logo a {
+   	line-height: 100%;
+   	font-weight: 200;
+   }
+   ul.table-of-contents li:not(.logo) a.active,
+   ul.table-of-contents li:not(.logo) a:hover {
+   	border-left: 3px solid ;
+   	background-color: #fafafa
+   }
+   ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+   ul#slide-out li:not(.logo) a span {
+   	color: #333 !important
+   }
+   li.logo span {
+   	display: block;
+   	font-size: 14px;
+   }
+   .container {
+   	width: 95%
+   }
+   h3 {
+   	padding: 30px 40px;
+   	font-weight: 200;
+   	margin-top: 0;
+   	text-transform: uppercase;
+   	margin-bottom: 60px;
+   }
+   .section {
+   	padding-top: 0;
+   	padding-bottom: 30px;
+   }
+   .full-height {
+   	height: 100vh;
+   }
+   #intro.section {
+   	background: url(../img/kai.jpg) no-repeat center center;
+   	background-size: cover;
+   	position: relative;
+   }
+   /*
+   #intro.section.two {
+   	background: url(img/andrew-borstein.jpg) no-repeat center center;
+   	background-size: cover;
+   	position: relative;
+   }
+   #intro.section.three {
+   	background: url(img/andrew-borstein3.jpg) no-repeat center center;
+   	background-size: cover;
+   	position: relative;
+   }
+   */
+   #intro.section .container {
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   	color: white;
+   	font-weight: 200;
+   }
+   #intro.section .container *:not(span) {
+   	font-weight: 300;
+   	padding: 0 30px;
+   	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+   	line-height: 150%;
+   }
+   #intro.section .underline {
+   	border-bottom: 5px solid #009688;
+   }
+   #intro.section .teal {
+   	padding: 0 10px;
+   }
+   .waves-effect.waves-blue .waves-ripple {
+        /* The alpha value allows the text and background color
+        of the button to still show through. */
+         background-color: rgba(33, 150, 243, 0.2);
+    }
+   .card {
+   	margin-bottom: 60px;
+   }
+   .card .role {
+       position: absolute;
+       top: 35px;
+       right: 38px;
+   }
+   .card .card-content {
+   	padding-bottom: 30px;
+   }
+   .card .card-content p {
+   	padding: 5px 0 0;
+   }
+   #experience .card-action {
+   	border: none;
+   	background-color: rgba(0,0,0,0.02);
+   }
+   .card-action span {
+   	font-size: 85%;
+   	color: #999;
+   }
+   .card ul {
+   	margin-bottom: 0
+   }
+
+   .card ul li {
+   	list-style-type: disc;
+   	margin-left: 24px;
+   	line-height: 200%;
+   }
+   .card .card-title {
+   	font-size: 24px;
+   }
+   .card i.right {
+     margin-left: 10px;
+   }
+   a.hoverline {
+   	-webkit-transition: .25s all;
+   	-moz-transition: .25s all;
+   	transition: .25s all;
+   	border-bottom: 3px solid transparent !important;
+   	padding: 3px 3px 0 3px;
+   }
+   a.hoverline:hover {
+   	border-bottom: 3px solid #009688 !important;
+   }
+   #skills .card.large {
+   	height: 360px;
+   }
+   #skills h4 {
+   	border-bottom: 1px solid #ddd;
+   	padding-bottom: 20px;
+   	margin-bottom: 30px;
+   }
+   /*#skills .row {
+   	margin-bottom: 60px;
+   }
+   */
+   #skills .col img.responsive-img {
+     display: table-cell;
+   	text-align: center;
+   	vertical-align: middle;
+   	max-height: 100px;
+   	padding-bottom: 10px;
+   	margin: 0 auto;
+   }
+   .card.large .card-content p {
+   	margin: 0;
+   	color: inherit;
+   	padding: 30px 0;
+   }
+   #experience .card-content .row {
+     border-bottom: 1px solid #ddd;
+     padding-bottom: 10px;
+   }
+   .card.large .card-image {
+   	height: 230px;
+   }
+   .card.large .card-content {
+   	height: auto;
+   }
+   .card.medium .card-image {
+   	height: 240px;
+   }
+   .card-action a.btn-floating {
+   margin-bottom: 0;
+   }
+
+   #contact a:not(.btn-floating) {
+   	position: relative;
+   	left: 20px;
+   	bottom: 6px;
+   }
+   #experience .col.s12.m2 {
+   	text-align: center;
+   }
+   .fa-external-link:before {
+     position: relative;
+     left: 3px;
+     top: 2px;
+   }
+   @media (min-width: 1200px) {
+   	#experience .container {
+   		width: 860px
+   	}
+   }
+   @media (max-width: 1360px) {
+   	.card ul li {
+   		margin-left: 20px;
+   		line-height: 200%;
+   		font-size: 14px;
+   	}
+   }
+   @media (max-width: 1160px) {
+   	.card ul li {
+   		line-height: 150%;
+   	}
+   }
+   @media (max-width: 992px) {
+   	main {
+   		padding-left: 0px;
+   		padding-top: 64px;
+   	}
+   	ul.side-nav a {
+   	  width: 100%;
+   	  padding: 0;
+   	  line-height: 100%;
+   	}
+   	nav {
+   		height: 64px;
+   		background: #fff;
+   		position: absolute;
+   	}
+   	nav a.button-collapse,
+   	nav a.button-collapse i {
+   		color: #009688;
+   		height: 56px;
+   		line-height: 56px;
+   	}
+   	h3 {
+   		padding: 20px 30px;
+     		margin-bottom: 40px;
+   	}
+   	.container {
+   		margin:  0 auto
+   	}
+
+   	nav.hide-on-large.only.trigger {
+   		display: block;
+   	  position: fixed;
+   	  top: 0;
+   	  z-index: 2;
+   	}
+   	.name-title {
+       position: absolute;
+   	  display: block;
+   	  height: 100%;
+   	  width: 100%;
+   	  text-align: center;
+   	  padding-top: 15px;
+   	}
+   	.name-title > span,
+   	.name-title > a {
+   	    position: relative;
+   	    line-height: 20px;
+   	}
+   	.name-title a {
+   	    font-size: 22px;
+   	    display: block;
+   	}
+   	.name-title span {
+   	    font-size: 14px;
+   	    display: block;
+   	}
+   	h3,
+   	.container {
+       position: relative;
+       top: 64px;
+   	}
+   	section#intro {
+   	    margin-bottom: -64px;
+   	}
+   }
+   @media (max-width: 600px) {
+   	h2 {
+   	  font-size: 22px;
+   	  line-height: 200%;
+   	  margin: 30px 0 0;
+   	}
+   	#intro.section .container *:not(span) {
+   		padding: 0;
+   	}
+   	.card .card-content .card-title {
+       line-height: 24px;
+       font-size: 20px;
+   	}
+   	.card .role {
+   	    position: relative;
+   	    top: initial;
+   	    right: initial;
+   	}
+   	#experience span.card-title {
+
+       text-align: center;
+       display: block
+   	}
+   	#experience span.card-title a {
+   	    margin: 0;
+   	}
+   	i.mdi-navigation-close.right {
+   	  position: relative;
+   	  bottom: 35px;
+   	}
+   	#contact a:not(.btn-floating) {
+       text-align: center;
+       display: block;
+       left: initial;
+       bottom: initial;
+   	}
+   	#contact a.btn-floating.btn-large {
+   	    display: block;
+   	    text-align: center;
+   	    margin: 0 auto;
+   	}
+   }
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
